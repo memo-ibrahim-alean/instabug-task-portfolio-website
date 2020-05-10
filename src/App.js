@@ -3,10 +3,11 @@ import './App.css';
 import HomaPage from './pages/home-page/home-page';
 import { Switch, Route } from 'react-router-dom';
 
+
 const App = () => (
   <div className="App">
     <Switch>
-      <Route path='/' component={HomaPage} />
+      <Route exact path='/' component={HomaPage} />
     </Switch>
   </div>
 );

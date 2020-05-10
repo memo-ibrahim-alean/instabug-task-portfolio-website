@@ -1,0 +1,25 @@
+#header {
+  margin-top: 1rem;
+}
+
+#header h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+#header p {
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 0;
+}
+
+.left-header {
+  margin-top: 26px;
+}
+
+#header img {
+  display: block;
+  height: 50%;
+  margin: 0 auto;
+}
+
