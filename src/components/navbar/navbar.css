@@ -1,0 +1,18 @@
+
+.nav-link, .logo {
+  text-decoration: none;
+  color: gray;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.logo {
+  color: black;
+  font-size: 2rem;
+  padding-left: 1rem;
+}
+
+.logo:hover {
+  text-decoration: none;
+  color: #555;
+}
