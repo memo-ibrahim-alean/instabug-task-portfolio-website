@@ -5,3 +5,7 @@ Form {
 #contactSection {
   margin-bottom: 3rem;
 }
+
+.center {
+  text-align: center;
+}
