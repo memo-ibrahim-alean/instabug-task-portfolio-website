@@ -3,8 +3,6 @@ import { Container, Row } from 'react-bootstrap';
 import { HashLink as Link } from 'react-router-hash-link';
 import getData from '../../data/getData';
 import './projects.css';
-import { faChevronright } from '@fortawesome/react-fontawesome';
-
 
 class Projects extends Component {
   constructor() {

@@ -5,6 +5,10 @@
   font-size: 1.5rem;
 }
 
+.navbar-nav {
+  margin-right: 25px;
+}
+
 .logo {
   font-size: 2rem;
   text-decoration: none;

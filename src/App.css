@@ -1,9 +1,56 @@
+
 * {
   box-sizing: border-box;
 }
 
-body {
+.dark-mode {
+  background-image: url('https://fsb.zobj.net/crop.php?r=-P6OqVJVtAEn3HWiU44dCF8VtpVjSmB5btM0cUHqUgbi2xFGN3YQ8q3XpEUlOG0hF6rSZas8eX_zBoKWmF3IaPifbkt6ToV-mPQB0-EwU4wUa31Iu5gWsZjCHzaoC73kj1mmSdn2oKc1q0nIrFZCkWHE_fyIsJaPkcw0jDptCxL1Kxt0me-T_Jx8Ts0');
+  color: #fff;
+}
+
+.dark-mode .card {
+  color: black;
+}
+
+.light-mode {
   background-image: url('https://i.pinimg.com/originals/ab/ab/60/abab60f06ab52fa7846593e6ae0c9a0b.png');
 }
 
 
+.moon, .sun {
+  position: absolute;
+}
+
+.sun {
+  right: 100%;
+  position: absolute;
+  bottom: 25%;
+}
+
+.moon {
+  bottom: 25%;
+  position: absolute;
+  left: 5%;
+}
+
+Form {
+  position: relative;
+  font-size: 2rem;
+  left: 50%;
+  top: 20px;
+}
+
+.custom-control {
+  position: relative;
+  left: 1.5%;
+}
+
+
+@media (max-width: 524px) {
+  .moon {
+    left: 12%;
+  }
+  .sun {
+    right: 102%;
+  }
+}
