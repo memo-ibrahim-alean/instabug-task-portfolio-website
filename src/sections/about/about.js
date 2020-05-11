@@ -12,14 +12,14 @@ const About = () => (
           <p className='about-paragraph'>
             I am a very self-motivated person, always seeking challenges to tackle. I am constantly urged to try new technologies and excel at the ones I already know. I'd love to combine my passion for learning with my front-end development skills to continue building websites and web applications
             Strong familiarity with (at minimum) the following:
-            <ol>
-              <li>HTML5</li>
-              <li>CSS3</li>
-              <li>Javascript</li>
-              <li>Bootstrap</li>
-              <li>React</li>
-            </ol>
           </p>
+          <ol>
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>Javascript</li>
+            <li>Bootstrap</li>
+            <li>React</li>
+          </ol>
         </Col>
         <Col sm={6}>
           <img

@@ -1,0 +1,28 @@
+{
+  "projects": [
+    {
+      "title": "My Reads project",
+      "overView": "a bookshelf app that allows you to select and categorize books you have read, are currently reading, or want to read.",
+      "Photo": "./images/myreeds.png",
+      "github": "https://github.com/mohamedibrahim1998/reactnd_myreeds",
+      "visit": "https://react-nanodgree-my-reads-app.netlify.app/",
+      "id": "MyReads"
+    },
+    {
+      "title": "Monsters Rolodex",
+      "overView": "Simple Filtering React App",
+      "Photo": "./images/monstersRolodex.png",
+      "github": "https://github.com/mohamedibrahim1998/monsters-rolodex",
+      "visit": "https://mohamedibrahim1998.github.io/monsters-rolodex/",
+      "id": "MonstersRolodex"
+    },
+    {
+      "title": "Would you Rather ?",
+      "overView": "a fully responsive and mobile-ready polling game that presents the user with a series of questions.",
+      "Photo": "./images/WouldYouRather.png",
+      "github": "https://github.com/mohamedibrahim1998/reactnd-would-you-rather",
+      "visit": "https://reactnd-project-would-you-rather.netlify.app/",
+      "id": "WouldyouRather"
+    }
+  ]
+}

@@ -51,9 +51,10 @@ class Contact extends Component {
                       name='message'
                       size="lg"
                       as="textarea"
+                      placeholder="Add Message"
                       rows="3" />
                   </Form.Group>
-                  <Button  className='btn-lg btn-block' variant="primary" type="submit">
+                  <Button className='btn-lg btn-block' variant="primary" type="submit">
                     Submit
                   </Button>
                 </Form>
@@ -62,12 +63,17 @@ class Contact extends Component {
             <Row className='mt-5'>
               <Col sm="12">
                 <div>
-                  <FontAwesomeIcon
-                    icon={faGithubAlt}
-                    style={{ color: "#333" }}
-                    size='3x'
-                    className='mr-4'
-                  />
+                  <a href='https://github.com/mohamedibrahim1998'
+                    target='_blank'
+                    rel="noopener noreferrer"
+                  >
+                    <FontAwesomeIcon
+                      icon={faGithubAlt}
+                      style={{ color: "#333" }}
+                      size='3x'
+                      className='mr-4'
+                    />
+                  </a>
                   <a href='https://www.linkedin.com/in/mohamedibrahim1998/'
                     target='_blank'
                     rel="noopener noreferrer"

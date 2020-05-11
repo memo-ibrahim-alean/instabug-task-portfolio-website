@@ -1,0 +1,19 @@
+.screen-shoot {
+  display: block;
+  margin-bottom: 30px;
+  margin: 0 auto;
+  border-radius: 10px;
+}
+
+/* .marginTop {
+  margin-top: 10rem;
+} */
+
+.marginBottom {
+  margin-bottom: 15rem;
+}
+
+.project-paragraph {
+  font-size: 1.2rem;
+}
+
