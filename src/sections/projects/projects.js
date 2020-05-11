@@ -70,7 +70,7 @@ class Projects extends Component {
                     Source
                   </a>
                 </Col>
-              </Row>              
+              </Row>
             ))
           }
         </Container>
