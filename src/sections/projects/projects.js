@@ -41,7 +41,7 @@ class Projects extends Component {
     const { projects } = this.state;
     return (
       <div>
-        <h3 className='text-center mt-5' id='projectSection'>Projects I Built</h3>
+        <h2 className='text-center mt-5 mb-5' id='projectSection'>Projects I Built</h2>
         <Container>
           {
             projects.map(project => (
@@ -49,12 +49,12 @@ class Projects extends Component {
                 <Col sm={7}>
                   <img
                     src={project.Photo} alt={`${project.title}`}
-                    className='screen-shoot'
+                    className='screen-shoot img-fluid'
                   />
                 </Col>
                 <Col sm={4}>
-                  <h4>{project.title}</h4>
-                  <p>{project.overView}</p>
+                  <h3>{project.title}</h3>
+                  <p className='project-paragraph'>{project.overView}</p>
                   <a href={`${project.visit}`}
                     target='_blank'
                     rel="noopener noreferrer"

@@ -3,6 +3,7 @@ import './home-page.css';
 import NavBar from '../../components/navbar/navbar';
 import Header from '../../sections/header/header';
 import Projects from '../../sections/projects/projects';
+import About from '../../sections/about/about';
 
 class HomaPage extends Component {
   render() {
@@ -11,6 +12,7 @@ class HomaPage extends Component {
         <NavBar />
         <Header />
         <Projects />
+        <About />
       </div>
     )
   }
