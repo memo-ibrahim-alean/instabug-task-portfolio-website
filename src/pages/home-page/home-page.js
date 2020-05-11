@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
+import './home-page.css';
 import NavBar from '../../components/navbar/navbar';
 import Header from '../../sections/header/header';
-import './home-page.css';
+import Projects from '../../sections/projects/projects';
 
 class HomaPage extends Component {
   render() {
@@ -9,6 +10,7 @@ class HomaPage extends Component {
       <div>
         <NavBar />
         <Header />
+        <Projects />
       </div>
     )
   }

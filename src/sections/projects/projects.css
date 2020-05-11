@@ -1,0 +1,15 @@
+.screen-shoot {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  border: 1px solid black;
+}
+
+
+.marginBottom {
+  margin-bottom: 7rem;
+}
+
+.marginTop {
+  margin-top: 3rem;
+}

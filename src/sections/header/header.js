@@ -15,7 +15,7 @@ const Header = () => (
         <p>Hi. I'm</p>
         <h1>Mohamed Ibrahim.</h1>
         <h3>I'm a Front end developer who loves to build websites.</h3>
-        <Button className='mt-2 mb-2' variant="outline-primary">See Projects</Button>{' '}
+        <Button className='mt-2 mb-5' variant="outline-primary">See Projects</Button>{' '}
       </Col>
       
     </Row>
