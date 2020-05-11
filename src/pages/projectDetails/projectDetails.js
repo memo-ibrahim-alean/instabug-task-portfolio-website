@@ -27,7 +27,34 @@ class ProjectsDetails extends Component {
       <div>
         <h2 className='text-center mt-5 mb-5'>Projects I Built</h2>
         <Container>
-          {project.overView}
+          <Row className='marginBottom marginTop'>
+            <Col sm={7}>
+              <img
+                src={project.Photo} alt={project.title}
+                className='screen-shoot img-fluid'
+              />
+            </Col>
+            
+            <Col sm={4}>
+              <h3>{project.title}</h3>
+              <p className='project-paragraph'>{project.overView}</p>
+              <a href={project.visit}
+                target='_blank'
+                rel="noopener noreferrer"
+                className='mt-2  btn btn-primary'
+              >
+                Visit
+              </a>
+              <a href={project.github}
+                target='_blank'
+                rel="noopener noreferrer"
+                className='ml-2 mt-2  btn btn-outline-primary'
+              >
+                Source
+              </a>
+            </Col>
+            
+          </Row>
         </Container>
       </div>
     );
