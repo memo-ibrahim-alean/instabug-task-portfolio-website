@@ -9,7 +9,7 @@ const Header = () => (
   <Container id='header'>
     <Row className='header-row'>
       <Col sm={3}>
-        <img src={avatarImg} alt="avatar" />
+        <img src={avatarImg} alt="avatar" className='img-fluid' />
       </Col>
       <Col sm={8} className='right-header'>
         <p>Hi. I'm</p>

@@ -5,7 +5,7 @@ import AboutImg from './about.png';
 
 const About = () => (
   <div id="aboutSection">
-    <h2 className='text-center mb-5'>About</h2>
+    <h2 className='text-center mb-5'>About Me</h2>
     <Container>
       <Row>
         <Col sm={6}>
