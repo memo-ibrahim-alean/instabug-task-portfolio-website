@@ -6,7 +6,7 @@
       "Photo": "./images/myreeds.png",
       "github": "https://github.com/mohamedibrahim1998/reactnd_myreeds",
       "visit": "https://react-nanodgree-my-reads-app.netlify.app/",
-      "id": "MyReads"
+      "id": 1
     },
     {
       "title": "Monsters Rolodex",
@@ -14,7 +14,7 @@
       "Photo": "./images/monstersRolodex.png",
       "github": "https://github.com/mohamedibrahim1998/monsters-rolodex",
       "visit": "https://mohamedibrahim1998.github.io/monsters-rolodex/",
-      "id": "MonstersRolodex"
+      "id": 2
     },
     {
       "title": "Would you Rather ?",
@@ -22,7 +22,7 @@
       "Photo": "./images/WouldYouRather.png",
       "github": "https://github.com/mohamedibrahim1998/reactnd-would-you-rather",
       "visit": "https://reactnd-project-would-you-rather.netlify.app/",
-      "id": "WouldyouRather"
+      "id": 3
     }
   ]
 }

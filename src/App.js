@@ -11,7 +11,8 @@ const App = () => (
     <NavBar />
     <Switch>
       <Route exact path='/' component={HomaPage} />
-      <Route path='/projects-details' component={ProjectsDetails} />
+      <Route path="/projects-details/:id"
+        component={ProjectsDetails} />
     </Switch>
   </div>
 );
