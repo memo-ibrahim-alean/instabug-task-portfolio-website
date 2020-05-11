@@ -1,9 +1,14 @@
 .about-img {
+  display: block;
   width: 70%;
   border: 1px solid black;
-  margin-bottom: 20px;
+  margin: 0 auto;
 }
 
 .about-paragraph {
   font-size: 1.2rem;
+}
+
+#aboutSection {
+  margin-bottom: 3rem;
 }

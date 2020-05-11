@@ -4,6 +4,7 @@ import NavBar from '../../components/navbar/navbar';
 import Header from '../../sections/header/header';
 import Projects from '../../sections/projects/projects';
 import About from '../../sections/about/about';
+import Contact from '../../sections/contact/contact';
 
 class HomaPage extends Component {
   render() {
@@ -13,6 +14,7 @@ class HomaPage extends Component {
         <Header />
         <Projects />
         <About />
+        <Contact />
       </div>
     )
   }
