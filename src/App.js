@@ -15,8 +15,8 @@ function App() {
   };
   return (
     <div className={dark ? "dark-mode" : "light-mode"}>
-      <NavBar handelChange={handelChange} label={'dark'} />
-      <Form>
+      <NavBar />
+      <Form className='dark-theme-form'>
         <span className="moon" role="img" aria-label="moon">🌙</span>
         <Form.Check
           onChange={handelChange}

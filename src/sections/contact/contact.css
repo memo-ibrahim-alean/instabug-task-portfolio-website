@@ -1,6 +1,6 @@
-Form {
+.contact-form {
   text-align: left;
-  
+  left: 0!important;
 }
 
 #contactSection {

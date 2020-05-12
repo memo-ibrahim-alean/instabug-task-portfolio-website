@@ -5,6 +5,10 @@
   border-radius: 10px;
 }
 
+#project-deatails {
+  height: 160vh;
+}
+
 
 .marginBottom {
   margin-bottom: 15rem;

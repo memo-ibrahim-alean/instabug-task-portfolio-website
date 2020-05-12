@@ -26,7 +26,7 @@ class Contact extends Component {
           <Container>
             <Row>
               <Col sm={12}>
-                <Form>
+                <Form className='contact-form'>
                   <Form.Group controlId="formBasicName">
                     <Form.Label>Name</Form.Label>
                     <Form.Control
