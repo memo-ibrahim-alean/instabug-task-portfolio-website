@@ -2,8 +2,8 @@
 
 1. download the project 
 2. cd into the project 
-3. write `yarn` or `npm install `
-4. then write `yarn start` or `npm run start` 
+3. write `yarn` or `yarn install `
+4. then write `yarn start`  
  
 
 This runs the app in the development mode.<br />
