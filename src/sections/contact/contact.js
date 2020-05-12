@@ -1,20 +1,53 @@
 import React, { Component } from 'react';
-import { Form, Button, Container, Row, Col } from 'react-bootstrap';
+import { Form, Button, Container, Row, Col, FormGroup } from 'react-bootstrap';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faGithub,
   faLinkedin
 } from '@fortawesome/free-brands-svg-icons';
 import './contact.css';
+import emailjs from 'emailjs-com';
 
 class Contact extends Component {
-  constructor() {
-    super();
-    this.state = {
+  state = {
+    name: '',
+    email: '',
+    subject: 'Form Submission',
+    message: '',
+  }
+
+  handleSubmit(e) {
+    e.preventDefault()
+    const { name, email, subject, message } = this.state
+    var template_params = {
+      "user_email": email,
+      "user_name": name,
+      "subject": subject,
+      "message": message
+    }
+
+    var service_id = "gmail";
+    var template_id = "form";
+    var user_Id = 'user_P9VbNXf2VXQXtb8oZ0YZA';
+    emailjs.send(service_id, template_id, template_params, user_Id )
+      .then(function (response) {
+        console.log('SUCCESS!', response.status, response.text);
+      }, function (error) {
+        console.log('FAILED...', error);
+      });
+    this.resetForm()
+  }
+
+  resetForm() {
+    this.setState({
       name: '',
       email: '',
-      message: ''
-    }
+      message: '',
+    })
+  }
+
+  handleChange = (param, e) => {
+    this.setState({ [param]: e.target.value })
   }
 
   render() {
@@ -26,35 +59,46 @@ class Contact extends Component {
           <Container>
             <Row>
               <Col sm={12}>
-                <Form className='contact-form'>
+                <Form
+                  onSubmit={this.handleSubmit.bind(this)}
+                  className='contact-form'>
                   <Form.Group controlId="formBasicName">
                     <Form.Label>Name</Form.Label>
                     <Form.Control
                       name='name'
                       size="lg"
                       type="text"
+                      value={this.state.name}
+                      onChange={this.handleChange.bind(this, 'name')}
                       placeholder="Enter name"
                       required />
                   </Form.Group>
-                  <Form.Group controlId="formBasicEmail">
+                  <FormGroup controlId="formBasicEmail">
                     <Form.Label>Email</Form.Label>
                     <Form.Control
                       name='email'
                       size="lg"
                       type="email"
+                      value={this.state.email}
+                      onChange={this.handleChange.bind(this, 'email')}
                       placeholder="Email"
                       required />
-                  </Form.Group>
-                  <Form.Group controlId="exampleForm.ControlTextarea1">
+                  </FormGroup>
+                  <FormGroup controlId="exampleForm.ControlTextarea1">
                     <Form.Label>Message</Form.Label>
                     <Form.Control
                       name='message'
                       size="lg"
+                      required
+                      value={this.state.message}
+                      onChange={this.handleChange.bind(this, 'message')}
                       as="textarea"
                       placeholder="Add Message"
                       rows="3" />
-                  </Form.Group>
-                  <Button className='btn-lg btn-block' variant="primary" type="submit">
+                  </FormGroup>
+                  <Button
+                    className='btn-lg btn-block'
+                    variant="primary" type="submit">
                     Submit
                   </Button>
                 </Form>
