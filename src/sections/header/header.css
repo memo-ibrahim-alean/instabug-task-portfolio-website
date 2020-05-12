@@ -1,10 +1,11 @@
 #header {
-  margin-top: 10vh;
+  margin-top: 6%;
+  margin-bottom: 7%;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 90vh;
 }
+
 #header h1 {
   font-size: 3rem;
   font-weight: bold;
@@ -22,9 +23,18 @@
 
 #header img {
   display: block;
-  width: 58%;
+  width: 60%;
   border-radius: 50%;
-  margin: 1rem auto;
+  margin: 5% auto;
 }
 
+
+@media (max-width: 524px) {
+  #header img {
+    display: block;
+    width: 50%;
+    border-radius: 50%;
+    margin: 5% auto;
+  }
+}
 

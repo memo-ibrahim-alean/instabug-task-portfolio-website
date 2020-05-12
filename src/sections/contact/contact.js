@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { Form, Button, Container, Row, Col } from 'react-bootstrap';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faGithubAlt,
+  faGithub,
   faLinkedin
 } from '@fortawesome/free-brands-svg-icons';
 import './contact.css';
@@ -68,8 +68,8 @@ class Contact extends Component {
                     rel="noopener noreferrer"
                   >
                     <FontAwesomeIcon
-                      icon={faGithubAlt}
-                      style={{ color: "#333" }}
+                      icon={faGithub}
+                      style={{ color: "gray" }}
                       size='3x'
                       className='mr-4'
                     />

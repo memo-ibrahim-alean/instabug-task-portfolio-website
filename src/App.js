@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Form } from 'react-bootstrap';
 import './App.css';
 import HomaPage from './pages/home-page/home-page';
@@ -8,8 +8,14 @@ import { Switch, Route } from 'react-router-dom';
 
 
 function App() {
-  const [dark, setDark] = useState(false);
-
+  const [dark, setDark] = useState(intitialMode());
+  useEffect(() => {
+    localStorage.setItem('dark', JSON.stringify(dark));
+  }, [dark])
+  function intitialMode() {
+    const savedMode = JSON.parse(localStorage.getItem('dark'));
+    return savedMode || false;
+  }
   const handelChange = () => {
     setDark(!dark)
   };
@@ -23,6 +29,7 @@ function App() {
           type="switch"
           id="custom-switch"
           label=""
+          checked={dark}
         />
         <span className="sun" role="img" aria-label="sun">🌞</span>
       </Form>
