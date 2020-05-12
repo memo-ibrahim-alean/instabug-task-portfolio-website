@@ -1,13 +1,4 @@
-.card{
-  position: relative;
-  padding-bottom: 30px;
-}
-
-.btn-link {
-  position: absolute;
-  right: 5%;
-  border-radius: 5px;
-  border: 2px solid skyblue!important;
-  text-decoration: none!important;
-  color: black!important;
+.project-img {
+  display: block;
+  width: 10%;
 }
