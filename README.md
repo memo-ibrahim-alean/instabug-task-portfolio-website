@@ -1,4 +1,4 @@
-### In the project directory, you can run:
+# Setup:
 
 1. download the project 
 2. cd into the project 
