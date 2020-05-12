@@ -29,9 +29,10 @@ class Contact extends Component {
     var service_id = "gmail";
     var template_id = "form";
     var user_Id = 'user_P9VbNXf2VXQXtb8oZ0YZA';
-    emailjs.send(service_id, template_id, template_params, user_Id )
+    emailjs.send(service_id, template_id, template_params, user_Id)
       .then(function (response) {
         console.log('SUCCESS!', response.status, response.text);
+        alert('Thanks for your feedback ❤️')
       }, function (error) {
         console.log('FAILED...', error);
       });

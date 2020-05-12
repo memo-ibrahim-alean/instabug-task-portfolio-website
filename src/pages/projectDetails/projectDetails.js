@@ -24,8 +24,7 @@ class ProjectsDetails extends Component {
   render() {
     const { project } = this.state;
     return (
-      <div id='project-deatails'>
-        <h2 className='text-center mt-5 mb-5'>Projects I Built</h2>
+      <div id='project-deatails' >
         <Container>
           <Row className='marginBottom marginTop'>
             <Col sm={7}>
