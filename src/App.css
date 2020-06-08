@@ -28,9 +28,9 @@
 }
 
 .moon {
-  
+ top: -12px;
   position: absolute;
-  left: 45%;
+  left: 49%;
 }
 
 .dark-theme-form {
