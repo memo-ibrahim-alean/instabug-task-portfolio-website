@@ -24,7 +24,7 @@
 .sun {
   right: 110%;
   position: absolute;
-  bottom: 25%;
+  top: -10px;
 }
 
 .moon {
